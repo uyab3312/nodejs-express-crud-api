@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const AWS = require('aws-sdk');
 AWS.config.update({
-  region: 'us-east-1'
+  region: 'us-east-2'
 });
 const dynamodb = new AWS.DynamoDB.DocumentClient();
 const dynamodbTableName = 'product-inventory';
